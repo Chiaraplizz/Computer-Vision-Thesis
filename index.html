@@ -12,6 +12,7 @@
       background: #f9f9f9;
       color: #333;
     }
+
     /* Sidebar */
     #sidebar {
       position: fixed;
@@ -32,9 +33,10 @@
     #sidebar ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     #sidebar ul li {
-      margin: 15px 0;
+      margin: 10px 0;
     }
     #sidebar ul li a {
       color: white;
@@ -46,6 +48,24 @@
     #sidebar ul li a:hover {
       background: #004494;
       border-radius: 6px;
+    }
+
+    /* Sidebar groups */
+    .nav-group {
+      margin-top: 14px;
+    }
+    .nav-group > .nav-group-title {
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+    }
+    .nav-sublist li a {
+      padding-left: 34px; /* indent sub-items */
+      font-size: 14px;
+      opacity: 0.98;
     }
 
     /* Main content */
@@ -114,12 +134,25 @@
     <h2>Sections</h2>
     <ul>
       <li><a href="#intro">Intro</a></li>
-      <li><a href="#section1">Video QA</a></li>
-      <li><a href="#section2">Neurosymbolic</a></li>
-      <li><a href="#section3">World Models</a></li>
-      <li><a href="#section4">4D Scene</a></li>
-      <li><a href="#section5">Brain Functioning</a></li>
-      <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
+
+      <li class="nav-group">
+        <div class="nav-group-title">Old Proposals</div>
+        <ul class="nav-sublist">
+          <li><a href="#section1">Video QA</a></li>
+          <li><a href="#section2">Neurosymbolic</a></li>
+          <li><a href="#section3">World Models</a></li>
+          <li><a href="#section4">4D Scene</a></li>
+          <li><a href="#section5">Brain Functioning</a></li>
+          <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-group">
+        <div class="nav-group-title">New Proposals</div>
+        <ul class="nav-sublist">
+          <li><a href="#new-proposals">New Proposals</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -138,10 +171,18 @@
         <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=erXza7Sfwkea2lEVZRj1L-ucqQXLp61BngrMIMgrk6pUMU5GWVczWU5VUkE0VkFIQjJWR0lEQVg0VS4u" target="_blank">Form</a>
       </p>
       <p>
-      For any question, contact me at:
-      <a href="mailto:chiara.plizzari@unibocconi.it">chiara.plizzari@unibocconi.it</a>
-    </p>
+        For any question, contact me at:
+        <a href="mailto:chiara.plizzari@unibocconi.it">chiara.plizzari@unibocconi.it</a>
+      </p>
     </header>
+
+    <!-- Old proposals (group header) -->
+    <div id="old-proposals" class="section">
+      <h2>Old Proposals</h2>
+      <p>
+        The following thesis directions are kept here as previous proposals. They may still be available, but are grouped separately from newer ideas.
+      </p>
+    </div>
 
     <!-- Section 1 -->
     <div id="section1" class="section">
@@ -231,9 +272,9 @@
     <!-- Section 4 -->
     <div id="section4" class="section">
       <h2>4. 4D Scene Understanding for Egocentric Vision
-      <img src="images/microsoft.png" alt="Microsoft Research Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
-    <img src="images/politecnico.png" alt="Politecnico di Milano Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
-        </h2>
+        <img src="images/microsoft.png" alt="Microsoft Research Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
+        <img src="images/politecnico.png" alt="Politecnico di Milano Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
+      </h2>
       <p class="requirements">Requirements: Python, PyTorch, basic fundamentals on 3D</p>
       <p class="collaborators">Collaborators: <a href="https://gabrielegoletto.github.io/" target="_blank">Gabriele Goletto</a> from Microsoft Research; <a href="https://marcocannici.github.io/" target="_blank">Marco Cannici</a>  from Politecnico di Milano</p>
       <figure style="text-align: center;">
@@ -262,8 +303,8 @@
       <h2>5. Using Computer Vision to Understand Biological Brain Functioning</h2>
       <p class="requirements">Requirements: Python, PyTorch</p>
       <p class="collaborators">
-  Collaborators: <a href="https://cs.unibocconi.eu/people/alessandro-sanzeni" target="_blank">Alessandro Sanzeni</a> from the Department of Computing Sciences
-</p>
+        Collaborators: <a href="https://cs.unibocconi.eu/people/alessandro-sanzeni" target="_blank">Alessandro Sanzeni</a> from the Department of Computing Sciences
+      </p>
       <img src="images/brain.png" alt="4D Scene Placeholder" class="placeholder">
       <p>
         Visual information in the brain is processed across multiple interconnected areas, arranged in a hierarchical organization somewhat reminiscent of deep neural networks. This cascade of processing enables sophisticated computations, with invariant object recognition as a striking example [1]: the ability to recognize objects regardless of changes in position, scale, orientation, or lighting. While the outcome of this system is clear, the mechanisms that produce it are not understood. In particular, the specific roles of different brain areas and the transformations of information as it passes from one stage to the next remain unresolved.
@@ -310,6 +351,17 @@
         <li><a href="https://epic-kitchens.github.io/epic-fields/" target="_blank">EPIC-Fields</a></li>
         <li><a href="https://hd-epic.github.io/" target="_blank">HD-EPIC</a></li>
         <li><a href="https://ego-exo4d-data.org/" target="_blank">Ego-Exo4D</a></li>
+      </ul>
+    </div>
+
+    <!-- New proposals -->
+    <div id="new-proposals" class="section">
+      <h2>New Proposals</h2>
+      <p>
+        This section is reserved for new research directions and thesis ideas. Add new proposals here as they emerge.
+      </p>
+      <ul>
+        <li><em>Coming soon…</em></li>
       </ul>
     </div>
 
