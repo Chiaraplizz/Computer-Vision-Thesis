@@ -68,6 +68,52 @@
       opacity: 0.98;
     }
 
+    /* Collapsible sidebar group (Old Proposals) */
+    .nav-details {
+      margin-top: 14px;
+    }
+
+    .nav-details > summary.nav-group-title {
+      list-style: none;               /* remove default marker (some browsers) */
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      padding: 10px 20px;
+      padding-right: 34px;            /* space for arrow */
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.95;
+      transition: background 0.3s;
+    }
+
+    /* Hide default triangle marker in WebKit browsers */
+    .nav-details > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    /* Custom arrow */
+    .nav-details > summary.nav-group-title::after {
+      content: "▸";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.9;
+    }
+
+    /* Rotate arrow when open */
+    .nav-details[open] > summary.nav-group-title::after {
+      content: "▾";
+    }
+
+    /* Optional: subtle hover */
+    .nav-details > summary.nav-group-title:hover {
+      background: #004494;
+      border-radius: 6px;
+    }
+
     /* Main content */
     #content {
       margin-left: 260px; /* space for sidebar */
@@ -135,19 +181,24 @@
     <ul>
       <li><a href="#intro">Intro</a></li>
 
+      <!-- Old Proposals: collapsible -->
       <li class="nav-group">
-        <div class="nav-group-title">Old Proposals</div>
-        <ul class="nav-sublist">
-          <li><a href="#old-proposals">Overview</a></li>
-          <li><a href="#section1">Video QA</a></li>
-          <li><a href="#section2">Neurosymbolic</a></li>
-          <li><a href="#section3">World Models</a></li>
-          <li><a href="#section4">4D Scene</a></li>
-          <li><a href="#section5">Brain Functioning</a></li>
-          <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
-        </ul>
+        <!-- add 'open' if you want it expanded by default -->
+        <details class="nav-details">
+          <summary class="nav-group-title">Old Proposals</summary>
+          <ul class="nav-sublist">
+            <li><a href="#old-proposals">Overview</a></li>
+            <li><a href="#section1">Video QA</a></li>
+            <li><a href="#section2">Neurosymbolic</a></li>
+            <li><a href="#section3">World Models</a></li>
+            <li><a href="#section4">4D Scene</a></li>
+            <li><a href="#section5">Brain Functioning</a></li>
+            <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
+          </ul>
+        </details>
       </li>
 
+      <!-- New Proposals: always visible -->
       <li class="nav-group">
         <div class="nav-group-title">New Proposals</div>
         <ul class="nav-sublist">
