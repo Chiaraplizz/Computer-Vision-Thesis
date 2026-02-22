@@ -54,7 +54,7 @@
     .nav-group {
       margin-top: 14px;
     }
-    /* (changed selector so it works for both <div> and <summary>) */
+    /* works for both <div> and <summary> */
     .nav-group-title {
       padding: 10px 20px;
       font-weight: 700;
@@ -197,9 +197,8 @@
     <ul>
       <li><a href="#intro">Intro</a></li>
 
-      <!-- Old Proposals: collapsible -->
+      <!-- Old Proposals: collapsible (CLOSED by default) -->
       <li class="nav-group">
-        <!-- add 'open' if you want it expanded by default -->
         <details class="nav-details">
           <summary class="nav-group-title">Old Proposals</summary>
           <ul class="nav-sublist">
@@ -251,9 +250,8 @@
     <!-- ========================= -->
     <section id="old-proposals">
 
-      <!-- Old proposals: collapsible in main page -->
-      <!-- Remove 'open' if you want it collapsed by default -->
-      <details id="old-proposals-details" class="main-details" open>
+      <!-- Old proposals: collapsible in main page (CLOSED by default) -->
+      <details id="old-proposals-details" class="main-details">
         <summary class="section-toggle">Old Proposals</summary>
 
         <div class="section">
@@ -452,25 +450,6 @@
         <h2>Proposal 1. <!-- Title --></h2>
         <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
         <p class="collaborators">Collaborators: <!-- optional --></p>
-
-        <!-- Optional figure -->
-        <!--
-        <figure style="text-align: center;">
-          <img src="images/your_image.png" alt="Proposal 1 image" class="placeholder">
-          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;"> <!-- caption --> <!-- </figcaption>
-        </figure>
-        -->
-
-        <!-- Description -->
-        <!-- <p>...</p> -->
-
-        <!-- References -->
-        <!--
-        <p><strong>References:</strong></p>
-        <ul class="references">
-          <li><!-- ... --></li>
-        </ul>
-        -->
       </div>
 
       <!-- Proposal 2 (empty placeholder) -->
@@ -478,25 +457,6 @@
         <h2>Proposal 2. <!-- Title --></h2>
         <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
         <p class="collaborators">Collaborators: <!-- optional --></p>
-
-        <!-- Optional figure -->
-        <!--
-        <figure style="text-align: center;">
-          <img src="images/your_image.png" alt="Proposal 2 image" class="placeholder">
-          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;"> <!-- caption --> <!-- </figcaption>
-        </figure>
-        -->
-
-        <!-- Description -->
-        <!-- <p>...</p> -->
-
-        <!-- References -->
-        <!--
-        <p><strong>References:</strong></p>
-        <ul class="references">
-          <li><!-- ... --></li>
-        </ul>
-        -->
       </div>
 
     </section>
