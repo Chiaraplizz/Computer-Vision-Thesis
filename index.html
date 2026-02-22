@@ -197,9 +197,19 @@
     <ul>
       <li><a href="#intro">Intro</a></li>
 
-      <!-- Old Proposals: collapsible (closed by default) -->
+      <!-- NEW proposals first (always visible) -->
       <li class="nav-group">
-        <details class="nav-details">
+        <div class="nav-group-title">New Proposals</div>
+        <ul class="nav-sublist">
+          <li><a href="#new-proposals">Overview</a></li>
+          <li><a href="#proposal1">Proposal 1</a></li>
+          <li><a href="#proposal2">Proposal 2</a></li>
+        </ul>
+      </li>
+
+      <!-- OLD proposals second (collapsible; closed by default) -->
+      <li class="nav-group">
+        <details class="nav-details" id="sidebar-old-details">
           <summary class="nav-group-title">Old Proposals</summary>
           <ul class="nav-sublist">
             <li><a href="#old-proposals">Overview</a></li>
@@ -211,16 +221,6 @@
             <li><a href="#section6">Ego-4D / Ego-Exo-4D</a></li>
           </ul>
         </details>
-      </li>
-
-      <!-- New Proposals: always visible -->
-      <li class="nav-group">
-        <div class="nav-group-title">New Proposals</div>
-        <ul class="nav-sublist">
-          <li><a href="#new-proposals">Overview</a></li>
-          <li><a href="#proposal1">Proposal 1</a></li>
-          <li><a href="#proposal2">Proposal 2</a></li>
-        </ul>
       </li>
     </ul>
   </nav>
@@ -244,6 +244,62 @@
         <a href="mailto:chiara.plizzari@unibocconi.it">chiara.plizzari@unibocconi.it</a>
       </p>
     </header>
+
+    <!-- ========================= -->
+    <!-- New proposals (group)     -->
+    <!-- ========================= -->
+    <section id="new-proposals">
+
+      <div class="section">
+        <h2>New Proposals</h2>
+        <p>
+          This section is reserved for new research directions and thesis ideas. Two placeholders are provided below.
+        </p>
+      </div>
+
+      <!-- Proposal 1 (empty placeholder) -->
+      <div id="proposal1" class="section">
+        <h2>Proposal 1.</h2>
+        <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
+        <p class="collaborators">Collaborators: <!-- optional --></p>
+
+        <!-- Optional figure (uncomment and fill in)
+        <figure style="text-align: center;">
+          <img src="images/your_image.png" alt="Proposal 1 image" class="placeholder">
+          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Caption here</figcaption>
+        </figure>
+        -->
+
+        <!-- References (uncomment and fill in)
+        <p><strong>References:</strong></p>
+        <ul class="references">
+          <li>...</li>
+        </ul>
+        -->
+      </div>
+
+      <!-- Proposal 2 (empty placeholder) -->
+      <div id="proposal2" class="section">
+        <h2>Proposal 2.</h2>
+        <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
+        <p class="collaborators">Collaborators: <!-- optional --></p>
+
+        <!-- Optional figure (uncomment and fill in)
+        <figure style="text-align: center;">
+          <img src="images/your_image.png" alt="Proposal 2 image" class="placeholder">
+          <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Caption here</figcaption>
+        </figure>
+        -->
+
+        <!-- References (uncomment and fill in)
+        <p><strong>References:</strong></p>
+        <ul class="references">
+          <li>...</li>
+        </ul>
+        -->
+      </div>
+
+    </section>
 
     <!-- ========================= -->
     <!-- Old proposals (group)     -->
@@ -319,70 +375,132 @@
             <img src="images/wm.png" alt="4D Scene Placeholder" class="placeholder">
             <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [6] </figcaption>
           </figure>
-          <p>...</p>
+          <p>
+            Animals and humans exhibit learning abilities and understandings of the world that are far beyond the capabilities of current AI and machine learning (ML) systems. For instance, an adolescent can often learn to drive a car in about 20 hours of practice, and children acquire language with relatively little exposure. Moreover, most humans know how to act in many situations they have never explicitly encountered.
+          </p>
+          <p>
+            By contrast, current ML systems typically require vast amounts of training data to be reliable, so that even rare combinations of situations are encountered frequently during training [2].
+          </p>
+          <p>
+            One explanation for this gap lies in the ability of humans and many animals to build world models, i.e., internal representations of how the world works. World models are crucial for tasks such as action prediction, task planning, robotic manipulation, and human–AI interaction [2]. They provide structured abstractions that enable predictive reasoning and planning, rather than passively processing inputs. Such models allow an agent to anticipate future states, reason about causal dependencies, and support decision-making [1,3].
+          </p>
+          <p>
+            Beyond perception, world models form the foundation for higher-level cognitive abilities. They can simulate alternative futures, evaluate potential outcomes, and guide planning in dynamic environments [2,4]. Recent works in video understanding have begun to explore this direction, developing systems that leverage predictive modeling and structured abstractions for planning and reasoning [5,6].
+          </p>
+          <p>
+            Following this line of research, this thesis aims to investigate world models in the context of video understanding, with the goal of assessing their strengths, limitations, and implications for computer vision tasks.
+          </p>
+          <p><strong>References:</strong></p>
+          <ul class="references">
+            <li>[1] Assran, Mido, et al. "V-jepa 2: Self-supervised video models enable understanding, prediction and planning." arXiv preprint arXiv:2506.09985 (2025).</li>
+            <li>[2] LeCun, Yann. "A path towards autonomous machine intelligence version 0.9.2, 2022-06-27." Open Review 62.1 (2022): 1-62.</li>
+            <li>[3] Bardes, Adrien, et al. "Revisiting feature prediction for learning visual representations from video." arXiv preprint arXiv:2404.08471 (2024).</li>
+            <li>[4] Yang, Jihan, et al. "Thinking in space: How multimodal large language models see, remember, and recall spaces." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
+            <li>[5] Chen, Delong, et al. "Planning with Reasoning using the Vision Language World Model." arXiv preprint arXiv:2509.02722 (2025).</li>
+            <li>[6] Chen, Delong, et al. "WorldPrediction: A Benchmark for High-level World Modeling and Long-horizon Procedural Planning." arXiv preprint arXiv:2506.04363 (2025).</li>
+          </ul>
         </div>
 
         <!-- Section 4 -->
         <div id="section4" class="section">
-          <h2>4. 4D Scene Understanding for Egocentric Vision</h2>
-          <p>...</p>
+          <h2>4. 4D Scene Understanding for Egocentric Vision
+            <img src="images/microsoft.png" alt="Microsoft Research Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
+            <img src="images/politecnico.png" alt="Politecnico di Milano Logo" style="height:42px; margin-left:20px; vertical-align:middle;">
+          </h2>
+          <p class="requirements">Requirements: Python, PyTorch, basic fundamentals on 3D</p>
+          <p class="collaborators">Collaborators: <a href="https://gabrielegoletto.github.io/" target="_blank">Gabriele Goletto</a> from Microsoft Research; <a href="https://marcocannici.github.io/" target="_blank">Marco Cannici</a> from Politecnico di Milano</p>
+          <figure style="text-align: center;">
+            <img src="images/4d_scene.png" alt="4D Scene Placeholder" class="placeholder">
+            <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
+          </figure>
+          <p>
+            This thesis investigates a method for 4D scene understanding by encoding the dynamic visual content of 2D videos into a spatially structured 3D representation. Inspired by Language Embedded Radiance Fields (LERF) [1], which ground language embeddings into 3D to enable open-ended queries over static scenes, the core idea is to augment volumetric scene representations with embedded descriptors that capture not only geometric and appearance information, but also temporally localized cues derived from the evolving video stream [2].
+          </p>
+          <p>
+            As the camera moves through the environment, frame-level visual features, such as motion patterns, object interactions, or temporal appearance changes, are projected into the 3D space, forming a dense, time-aware embedding field [2,3]. This enables the system to associate dynamic events with specific spatial regions in the scene, effectively grounding temporal context in 3D.
+          </p>
+          <p>
+            The result is a scene representation that supports spatio-temporal reasoning, such as identifying where certain actions occurred or how objects moved over time [3]. This work opens the door to applications in video-driven scene reconstruction, robotic memory, and embodied perception, where understanding what happened, where, and when is critical [2,3].
+          </p>
+          <p><strong>References:</strong></p>
+          <ul class="references">
+            <li>[1] Kerr, Justin, et al. "Lerf: Language embedded radiance fields." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2023.</li>
+            <li>[2] Mur-Labadia, Lorenzo, Josechu Guerrero, and Ruben Martinez-Cantin. "DIV-FF: Dynamic Image-Video Feature Fields For Environment Understanding in Egocentric Videos." Proceedings of the Computer Vision and Pattern Recognition Conference. 2025.</li>
+            <li>[3] Plizzari, Chiara, et al. "Spatial cognition from egocentric video: Out of sight, not out of mind." 2025 International Conference on 3D Vision (3DV). IEEE, 2025.</li>
+          </ul>
         </div>
 
         <!-- Section 5 -->
         <div id="section5" class="section">
           <h2>5. Using Computer Vision to Understand Biological Brain Functioning</h2>
-          <p>...</p>
+          <p class="requirements">Requirements: Python, PyTorch</p>
+          <p class="collaborators">
+            Collaborators: <a href="https://cs.unibocconi.eu/people/alessandro-sanzeni" target="_blank">Alessandro Sanzeni</a> from the Department of Computing Sciences
+          </p>
+          <img src="images/brain.png" alt="4D Scene Placeholder" class="placeholder">
+          <p>
+            Visual information in the brain is processed across multiple interconnected areas, arranged in a hierarchical organization somewhat reminiscent of deep neural networks. This cascade of processing enables sophisticated computations, with invariant object recognition as a striking example [1]: the ability to recognize objects regardless of changes in position, scale, orientation, or lighting. While the outcome of this system is clear, the mechanisms that produce it are not understood. In particular, the specific roles of different brain areas and the transformations of information as it passes from one stage to the next remain unresolved.
+          </p>
+          <p>
+            Newly developed recording techniques, such as electrophysiology and calcium imaging, allow researchers to measure neural activity at an unprecedented temporal and spatial scale [2]. However, while these methods reveal where and when activity occurs, approaches to interpret their results are still limited and remain an active area of research. In particular, they provide limited insight into what specific stimulus features drive the observed neural responses, and how these representations change across different brain areas.
+          </p>
+          <p>
+            Recent advances in deep learning, particularly in computer vision, provide new opportunities to bridge the gap between artificial visual systems and biological vision. This thesis proposes to use deep computer vision models to investigate the features and image characteristics that elicit responses in specific brain regions. Interpretability techniques, such as saliency maps, feature visualization, or language, will be applied to identify common properties of stimuli that consistently activate particular cortical areas [3,4].
+          </p>
+          <p><strong>References:</strong></p>
+          <ul class="references">
+            <li>[1] DiCarlo, James J., Davide Zoccolan, and Nicole C. Rust. "How does the brain solve visual object recognition?" Neuron (2012).</li>
+            <li>[2] The MICrONS Consortium. "Functional connectomics spanning multiple areas of mouse visual cortex." Nature (2025).</li>
+            <li>[3] Oikarinen, Tuomas, and Tsui-Wei Weng. "Clip-dissect: Automatic description of neuron representations in deep vision networks." arXiv preprint arXiv:2204.10965 (2022).</li>
+            <li>[4] Bai, Nicholas, et al. "Interpreting neurons in deep vision networks with language models." arXiv preprint arXiv:2403.13771 (2024).</li>
+          </ul>
         </div>
 
         <!-- Section 6 -->
         <div id="section6" class="section">
           <h2>6. Ego-4D / Ego-Exo-4D Challenges</h2>
-          <p>...</p>
+          <p class="requirements">Requirements: Python, PyTorch</p>
+          <p><strong>Note:</strong> This thesis is slightly easier, as dataset and problem formulation are already defined. Still, good solutions for existing problems might be found.</p>
+          <figure style="text-align: center;">
+            <img src="images/challenges.png" alt="4D Scene Placeholder" class="placeholder">
+            <figcaption style="font-size: 0.9em; color: #555; margin-top: 6px;">Image from [1] </figcaption>
+          </figure>
+          <p>
+            Large-scale benchmarks such as Ego4D [1] and Ego-Exo4D [2] play a pivotal role in advancing applied AI for computer vision. They provide well-structured challenges with standardized metrics, reproducible baselines, and clear evaluation protocols, ensuring that research is conducted within a rigorous and transparent framework. Moreover, their strong international visibility, often highlighted through dedicated leaderboards and recognition at top-tier conferences, makes them a valuable platform for impactful contributions.
+          </p>
+          <p>
+            One promising direction for this thesis is to tackle one of these benchmark challenges with a novel approach. Potential avenues include episodic memory, action anticipation, or social and object interaction reasoning, all of which remain open problems for current video understanding systems. These tasks directly address fundamental limitations in temporal reasoning, causal inference, and long-term context retention. Advancing solutions in any of these areas would not only push the state of the art on benchmark datasets but also contribute to building more robust, generalizable video understanding systems for real-world applications.
+          </p>
+          <p><strong>References:</strong></p>
+          <ul class="references">
+            <li>[1] Ego4D: <a href="https://ego4d-data.org/" target="_blank">https://ego4d-data.org/</a></li>
+            <li>[2] Ego-Exo4D: <a href="https://ego-exo4d-data.org/" target="_blank">https://ego-exo4d-data.org/</a></li>
+          </ul>
+          <p><strong>Some interesting datasets you could look into:</strong></p>
+          <ul>
+            <li><a href="https://ego4d-data.org/" target="_blank">Ego4D</a></li>
+            <li><a href="https://epic-kitchens.github.io/2025" target="_blank">EPIC-KITCHENS</a></li>
+            <li><a href="https://epic-kitchens.github.io/epic-fields/" target="_blank">EPIC-Fields</a></li>
+            <li><a href="https://hd-epic.github.io/" target="_blank">HD-EPIC</a></li>
+            <li><a href="https://ego-exo4d-data.org/" target="_blank">Ego-Exo4D</a></li>
+          </ul>
         </div>
 
       </details>
     </section>
 
-    <!-- ========================= -->
-    <!-- New proposals (group)     -->
-    <!-- ========================= -->
-    <section id="new-proposals">
-
-      <div class="section">
-        <h2>New Proposals</h2>
-        <p>
-          This section is reserved for new research directions and thesis ideas. Two placeholders are provided below.
-        </p>
-      </div>
-
-      <div id="proposal1" class="section">
-        <h2>Proposal 1. <!-- Title --></h2>
-        <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
-        <p class="collaborators">Collaborators: <!-- optional --></p>
-      </div>
-
-      <div id="proposal2" class="section">
-        <h2>Proposal 2. <!-- Title --></h2>
-        <p class="requirements">Requirements: <!-- e.g., Python, PyTorch --></p>
-        <p class="collaborators">Collaborators: <!-- optional --></p>
-      </div>
-
-    </section>
-
   </div>
 
+  <!-- Footer -->
   <footer>
     © 2025 Computer Vision Thesis — Draft research directions
   </footer>
 
-  <!-- Auto-open Old Proposals in main content ONLY when navigating to its anchors -->
+  <!-- Fix: force Old Proposals CLOSED by default (even with bfcache), but auto-open when a hash points inside -->
   <script>
     (function () {
-      const oldDetails = document.getElementById('old-proposals-details');
+      const oldDetails = document.getElementById("old-proposals-details");
       if (!oldDetails) return;
-
-      // Force CLOSED on first load (no matter what)
-      oldDetails.open = false;
 
       function openOldIfNeeded() {
         const hash = location.hash ? location.hash.slice(1) : "";
@@ -391,21 +509,33 @@
         const target = document.getElementById(hash);
         if (!target) return;
 
-        // open if hash is #old-proposals or the target is inside the details
         const shouldOpen = (hash === "old-proposals") || oldDetails.contains(target);
         if (!shouldOpen) return;
 
         const wasOpen = oldDetails.open;
         oldDetails.open = true;
 
-        // If it was closed, re-scroll after opening so the target is visible.
+        // If it was closed, re-scroll after opening so the anchor is visible.
         if (!wasOpen) {
           setTimeout(() => target.scrollIntoView({ block: "start" }), 0);
         }
       }
 
+      function forceClosedByDefaultThenMaybeOpen() {
+        // Remove attribute + property to defeat "restored state" behaviors.
+        oldDetails.removeAttribute("open");
+        oldDetails.open = false;
+
+        // Only open if URL hash targets Old Proposals or a child section.
+        openOldIfNeeded();
+      }
+
+      // pageshow handles normal loads + back/forward cache restores.
+      window.addEventListener("pageshow", forceClosedByDefaultThenMaybeOpen);
       window.addEventListener("hashchange", openOldIfNeeded);
-      openOldIfNeeded(); // open only if there's a hash pointing inside
+
+      // Run immediately as well.
+      forceClosedByDefaultThenMaybeOpen();
     })();
   </script>
 
